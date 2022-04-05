@@ -25,3 +25,14 @@
     font-size: 16px;
     margin-bottom: 3px;
 }
+.gameAbout .gameDescription button{
+    padding:10px
+}
+.gameAbout .gameDescription button i{
+    margin-right: 5px;
+    transition: .8s ease all;
+}
+.gameAbout .gameDescription  button:hover{
+    background-color: var(--logo-color-green);
+    color: var(--color-white);
+}
