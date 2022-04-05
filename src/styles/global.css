@@ -1,0 +1,200 @@
+:root{
+  --background-black: #141414;
+  --logo-color: #fff;
+  --logo-color-green: #10da2b;
+  --color-white: #fff;
+  --color-menu-unselected:#AAA
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background: var(--background-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+}
+#headerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.logoName{
+  display: flex;
+  align-items: center;
+}
+.logoName h1{
+  color: var(--logo-color-green);
+  font-size: 40px;
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  font-family:'Arial Black', Times, serif;
+  font-weight: bold;
+
+}
+header nav a{
+  text-decoration: none;
+  color: var(--color-menu-unselected);
+  margin-right: 10px;
+  transition: .3s ease all;
+}
+header nav a:hover{
+  color: var(--logo-color-green);
+}
+#logoImg{
+  width: 40px;
+  margin-right: 10px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px); 
+}
+
+.promo{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+.imgPromo{
+  height: 400px;
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+.promo .description{
+  width:400px;
+  display:flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.promo .title{
+  color:white;
+  font-family: 'Arial', Times, serif;
+}
+.promo .description h2{
+  color:white;
+  font-size: 40px;
+  font-family: 'Arial', Times, serif;
+}
+.promo .description p{
+  color:white;
+  font-size: 16px
+}
+.promo .description .button{
+  padding: 20px;
+  width:150px;
+
+  margin-top: 15px;
+  
+  border-radius: 8px;
+  align-self: flex-end;
+  transition: .8s ease all;
+  background-color: var(--logo-color);
+  align-items: center;
+  
+  
+}
+.button a{
+  text-decoration: none;
+  color:#141414
+}
+.promo .description .button:hover{
+  background-color: var(--logo-color-green);
+  color: var(--color-white)
+}
+.promo .description .button a:hover{
+  color: var(--color-white)
+}
+.gameCategory{
+  margin-top: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gameCategory header{
+  color:var(--color-white)
+}
+.gameCategory #gamesCarousel{
+  margin-top: 20px;
+}
+.gameCategory #gamesCarousel #gamesCarouselBox{
+  width: 100%;
+  height: 100%;
+  display:block;
+}
+
+.streamers{
+  margin-top: 15px;
+  margin: center;
+}
+.streamers #header h2{
+  color:var(--color-white);
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.streamersContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  
+}
+.streamersContainer a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--color-menu-unselected);
+}
+.streamersContainer a:hover {
+  text-decoration: none;
+  color: var(--logo-color-green);
+}
+.streamersContainer a img{
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+  #headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: center;
+  }
+
+  .promo{
+    width: 100%;
+    height:30%; 
+  }
+  .promo #promoInfo{
+    margin-top: 50px;
+  }
+  .promo #promoInfo p{
+    margin-top: 10px;
+  }
+  .promo #promoInfo span{
+    margin-top: 5px;
+  }
+
+  .promo #promoInfo span button{
+    margin-top: 5px;
+  }
+
+  .streamersContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .streamersContainer a img{
+    width: 100%;  
+  }
+}

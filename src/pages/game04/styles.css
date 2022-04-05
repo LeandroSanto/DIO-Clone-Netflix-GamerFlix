@@ -1,0 +1,27 @@
+:root{
+    --background-black: #141414;
+    --logo-color: #fff;
+    --logo-color-green: #10da2b;
+    --color-white: #fff;
+    --color-menu-unselected:#AAA
+  }
+.gameAbout{
+    display:flex;
+    margin-left: 5%;
+    justify-content: row;
+    align-items: center;
+}
+.gameAbout .gameDescription{
+    margin-left: 3%;
+}
+.gameAbout .gameDescription h1{
+    color:var(--color-white);
+    font-family: 'Arial Black',Times,serif;
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+.gameAbout .gameDescription p{
+    color:var(--color-menu-unselected);
+    font-size: 16px;
+    margin-bottom: 3px;
+}
